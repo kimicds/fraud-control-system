@@ -37,6 +37,6 @@ The system aims to help financial institutions, fintech platforms, and audit & r
 - Render for the cloud services 
 
 ---
-Acknowledgments
+## Acknowledgments
 
 This project was developed under the BuildGems Mentorship Program, with guidance and mentorship from Mr. Philip Ogunmola.
