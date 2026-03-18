@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+    .hero {
+        background: linear-gradient(135deg,#0d6efd,#4b0082);
+        color: white;
+        padding: 80px 20px;
+        border-radius: 14px;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .section-card {
+        background: white;
+        border-radius: 12px;
+        padding: 28px;
+        border: 1px solid #e5e5e5;
+        transition: 0.2s;
+    }
+
+    .section-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+    }
+
+    .use-card {
+        background: white;
+        border-radius: 12px;
+        padding: 22px;
+        border: 1px solid #e5e5e5;
+        transition: 0.2s;
+    }
+
+    .use-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+    }
+
+    .muted-text {
+        color: #444;
+        line-height: 1.7;
+        font-size: 1rem;
+    }
+
+    .highlight {
+        color: #0d6efd;
+        font-weight: 600;
+    }
+
+    .use-card p {
+        margin: 10px 0 0;
+    }
+</style>
+
+<!-- HERO -->
+<div class="hero text-center">
+    <h1 class="fw-bold" style="font-size:2.6rem;">System Details</h1>
+</div>
+
+<!-- WHY IT MATTERS -->
+<div class="row g-4 mt-5">
+
+    <div class="col-md-6">
+        <div class="section-card h-100">
+            <h4 class="fw-bold text-primary mb-3">Why It Matters</h4>
+            <p class="muted-text">
+                Fraud keeps evolving, making traditional rule-based systems less effective. 
+                Our machine learning system detects unusual activity instantly, helping reduce risk 
+                and support better decision-making across financial operations.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="section-card h-100">
+            <h4 class="fw-bold text-dark mb-3">How It Works</h4>
+            <p class="muted-text">
+                Transaction details such as amount, balance, type, and time are processed into model features. 
+                The system analyzes these patterns and classifies each transaction as 
+                Fraud or Not Fraud instantly.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<!-- USE CASE -->
+<div class="row g-4 mt-4">
+
+    <div class="col-md-4">
+        <div class="use-card text-center h-100">
+            <h5 class="fw-bold mb-2">Financial Institutions</h5>
+            <p class="muted-text">
+                Monitor transactions in real time and quickly detect suspicious activity. Protect customers and assets efficiently.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="use-card text-center h-100">
+            <h5 class="fw-bold mb-2">Fintech Platforms</h5>
+            <p class="muted-text">
+                Enhance payment security, reduce fraud risk, and ensure smooth digital services.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="use-card text-center h-100">
+            <h5 class="fw-bold mb-2">Audit & Risk Teams</h5>
+            <p class="muted-text">
+                Gain clear insights to support investigations, risk assessment, and smarter decision-making.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<!-- BACK BUTTON -->
+<div class="text-center mt-5">
+    <a href="{{ url_for('about') }}" class="btn btn-primary px-5 py-3">
+        Back to About
+    </a>
+</div>
+
+{% endblock %}
