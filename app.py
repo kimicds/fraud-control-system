@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MODEL_PATH = os.getenv("MODEL_PATH", "fraud_detection_model.pkl")
+MODEL_PATH = "fraud_detection_model.pkl"
 
 app = Flask(__name__)
 
