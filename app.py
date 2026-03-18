@@ -6,10 +6,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MODEL_PATH = os.getenv("MODEL_PATH", "fraud_detection_model.pkl")
+MODEL_PATH = "fraud_detection_model.pkl"
 
 app = Flask(__name__)
-app.secret_key = os.getenv("SECRET_KEY", "fraud_secret_key")
+
 
 # Load ML model
 model = joblib.load(MODEL_PATH)
