@@ -10,7 +10,7 @@ MODEL_PATH = "fraud_detection_model.pkl"
 
 app = Flask(__name__)
 # Use an environment variable or a strong random key
-app.secret_key = os.getenv("SECRET_KEY")
+app.secret_key = "41c88cf31600985762f31ee508a1b49fee67a2893bec156e1267bd543a4f2687"
 
 
 # Load ML model
