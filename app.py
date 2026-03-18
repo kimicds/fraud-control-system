@@ -9,6 +9,8 @@ load_dotenv()
 MODEL_PATH = "fraud_detection_model.pkl"
 
 app = Flask(__name__)
+# Use an environment variable or a strong random key
+app.secret_key = os.getenv("SECRET_KEY")
 
 
 # Load ML model
