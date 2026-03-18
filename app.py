@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 
 # Load ML model
-model = joblib.load(MODEL_PATH)
+model = joblib.load( "fraud_detection_model.pkl")
 
 @app.route("/details")
 def details():
